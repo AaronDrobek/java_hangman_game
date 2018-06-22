@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc567e50-8a8b-494a-82fe-6bb0a041e7e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/drobek/practice/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/drobek/practice/GamePlay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/drobek/practice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/drobek/practice/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/drobek/practice/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="64">
+              <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#329#337#0" expanded="true" />
@@ -61,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamePlay.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GamePlay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/drobek/practice/GamePlay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="61">
+              <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#226#234#0" expanded="true" />
@@ -257,7 +256,7 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24411765" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6602941" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -322,24 +321,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/drobek/practice/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/drobek/practice/GamePlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="61">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#329#337#0" expanded="true" />
+            <element signature="e#226#234#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/drobek/practice/GamePlay.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/drobek/practice/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="64">
+          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#226#234#0" expanded="true" />
+            <element signature="e#329#337#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -32,7 +32,10 @@ public class Main {
 
                 guessedLetters.add(userGuess);
                 if (gamePlay.printGameBoard(userGuess, guessedLetters) == false) {
+                    System.out.println();
                     guessCount++;
+                    System.out.println();
+                    System.out.println("'"+userGuess+"'" + " is not found. ");
                 }
             }
 
