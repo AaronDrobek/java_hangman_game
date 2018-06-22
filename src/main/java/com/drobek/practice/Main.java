@@ -15,6 +15,7 @@ public class Main {
 
 
         gamePlay.buildGameBoard();
+        System.out.println();
 
         do {
             callSwitch(guessCount);
@@ -34,7 +35,7 @@ public class Main {
                     guessCount++;
                 }
             }
-            System.out.println();
+
 
             System.out.println();
         } while (guessCount < 5);

@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class GamePlay {
     List<Letter> allLetters = new ArrayList<Letter>();
-    List<String> wordList = Arrays.asList("target", "school", "pressure", "time", "friday", "computer", "helicopter", "jump","dog","parrot","record", "empty","magazine");
+    List<String> wordList = Arrays.asList("target", "school", "pressure", "time", "friday", "computer", "helicopter", "jump", "dog", "parrot", "record", "empty", "magazine");
     String randomWord;
     int guessedCorrect = 0;
 
@@ -33,17 +33,15 @@ public class GamePlay {
     public boolean printGameBoard(String guess, List<String> guessedList) {
         boolean found = false;
         char guessed = guess.charAt(0);
+        for (int eachLetter = 0; eachLetter < allLetters.size(); eachLetter++) {
+            if (guessed == allLetters.get(eachLetter).getVaulue()) {
+                found = true;
+                guessedCorrect++;
+                allLetters.get(eachLetter).setDisplayIcon(allLetters.get(eachLetter).getVaulue());
+            }
 
-
-                for (int eachLetter = 0; eachLetter < allLetters.size(); eachLetter++) {
-                    if (guessed == allLetters.get(eachLetter).getVaulue()) {
-                        found = true;
-                        guessedCorrect++;
-                        allLetters.get(eachLetter).setDisplayIcon(allLetters.get(eachLetter).getVaulue());
-                    }
-
-                    System.out.print(allLetters.get(eachLetter).getDisplayIcon() + " ");
-                }
+            System.out.print(allLetters.get(eachLetter).getDisplayIcon() + " ");
+        }
 
         if (guessedCorrect == allLetters.size()) {
 
@@ -51,6 +49,7 @@ public class GamePlay {
             System.out.println("********************************************************");
             System.out.println("*************    YOU WON!!!!!!!!!!!!!!    **************");
             System.out.println("********************************************************");
+            System.exit(0);
 
 
         }
