@@ -26,15 +26,13 @@ public class Main {
             String userGuess = scanner.next();
             if (checkGuessForDuplicate(userGuess, guessedLetters)) {
                 System.out.println("You have already guessed that letter");
-                guessCount--;
-            }else{
+
+            }else {
 
                 guessedLetters.add(userGuess);
-            }
-
-
-            if (gamePlay.printGameBoard(userGuess) == false) {
-                guessCount++;
+                if (gamePlay.printGameBoard(userGuess, guessedLetters) == false) {
+                    guessCount++;
+                }
             }
             System.out.println();
 
