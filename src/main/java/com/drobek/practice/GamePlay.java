@@ -45,8 +45,12 @@ public class GamePlay {
                 System.out.print(allLetters.get(eachLetter).getDisplayIcon() + " ");
             }
         if (guessedCorrect == allLetters.size()) {
+
             System.out.println();
-            System.out.println("You Won!!!!!!!!!!!!!!!!!!");
+            System.out.println("********************************************************");
+            System.out.println("*************    YOU WON!!!!!!!!!!!!!!    **************");
+            System.out.println("********************************************************");
+
 
         }
         return found;

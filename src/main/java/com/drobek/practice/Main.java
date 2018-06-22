@@ -16,30 +16,40 @@ public class Main {
 
         gamePlay.buildGameBoard();
 
-       do {
+        do {
+            callSwitch(guessCount);
+            System.out.println();
+            System.out.println(guessedLetters + " guessed letters");
+            System.out.println(guessCount + " incorrect guesses");
+            System.out.println("enter your guess");
+            System.out.println();
+            String userGuess = scanner.next();
+            if (checkGuessForDuplicate(userGuess, guessedLetters)) {
+                System.out.println("You have already guessed that letter");
+                guessCount--;
+            }else{
 
-           System.out.println(guessedLetters + " guessed letters");
-           System.out.println(guessCount + " number of wrong guesses");
-           System.out.println("enter your guess");
-           String userGuess = scanner.next();
-           guessedLetters.add(userGuess);
-           if(gamePlay.printGameBoard(userGuess)==false){
-               guessCount ++;
-           }
-           System.out.println();
-           callSwitch(guessCount);
-           System.out.println();
-       }while(guessCount  < 5);
+                guessedLetters.add(userGuess);
+            }
 
-        System.out.println("Game over");
+
+            if (gamePlay.printGameBoard(userGuess) == false) {
+                guessCount++;
+            }
+            System.out.println();
+
+            System.out.println();
+        } while (guessCount < 5);
+        printArms();
+        System.out.println("*******************************************");
+        System.out.println("**********    GAME OVER    ****************");
         System.out.println("your word was " + gamePlay.randomWord);
 
 
-
-
     }
-    public static void callSwitch(int guessCount){
-        switch (guessCount){
+
+    public static void callSwitch(int guessCount) {
+        switch (guessCount) {
             case 0:
                 break;
             case 1:
@@ -51,15 +61,25 @@ public class Main {
             case 3:
                 printBody();
                 break;
-            case 4:printLegs();
+            case 4:
+                printLegs();
                 break;
             case 5:
                 printArms();
                 break;
         }
     }
+    public static boolean checkGuessForDuplicate(String guess, List<String> guessedList){
+        for (int eachLetter = 0; eachLetter < guessedList.size(); eachLetter++) {
+            if(guessedList.get(eachLetter).equals(guess)){
+                return true;
+            }
 
-    public static void printGallow(){
+        }
+    return false;
+    }
+
+    public static void printGallow() {
 
         System.out.println("   ____________");
         System.out.println("   |");
@@ -71,6 +91,7 @@ public class Main {
         System.out.println("   | ");
         System.out.println("___|___");
     }
+
     public static void printHead() {
 
         System.out.println("   ____________");
@@ -83,7 +104,8 @@ public class Main {
         System.out.println("   |");
         System.out.println("___|___");
     }
-    public static void printBody(){
+
+    public static void printBody() {
 
         System.out.println("   ____________");
         System.out.println("   |          _|_");
@@ -95,7 +117,8 @@ public class Main {
         System.out.println("   |");
         System.out.println("___|___");
     }
-    public static void printLegs(){
+
+    public static void printLegs() {
 
         System.out.println("   ____________");
         System.out.println("   |          _|_");
@@ -107,13 +130,14 @@ public class Main {
         System.out.println("   |          / \\ ");
         System.out.println("___|___      /   \\");
     }
-    public static void printArms(){
+
+    public static void printArms() {
 
         System.out.println("   ____________");
         System.out.println("   |          _|_");
-        System.out.println("   |         /   \\");
-        System.out.println("   |        |     |");
-        System.out.println("   |         \\_ _/");
+        System.out.println("   |         /    \\");
+        System.out.println("   |        | x x  |");
+        System.out.println("   |         \\_ _ /");
         System.out.println("   |          _|_");
         System.out.println("   |         / | \\");
         System.out.println("   |          / \\ ");
